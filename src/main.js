@@ -27,16 +27,16 @@ let bounce = 0;
 function collision() {
 	if (plane.position.x > 39 || plane.position.x < -39) {
 		x_increment = -x_increment;
-		planeWidth -= 0.05;
-		planeHeight -= 0.05;
+		planeWidth -= 0.07;
+		planeHeight -= 0.07;
 		plane.scale.set(planeWidth,planeHeight);
 		randomColor();
 		bounce++;
 	}
 	if (plane.position.y > 19 || plane.position.y < -19) {
 		y_increment = -y_increment;
-		planeWidth -= 0.05;
-		planeHeight -= 0.05;
+		planeWidth -= 0.07;
+		planeHeight -= 0.07;
 		plane.scale.set(planeWidth,planeHeight);
 		randomColor();
 		bounce++;
